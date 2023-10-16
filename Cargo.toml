@@ -1,0 +1,18 @@
+[package]
+name = "vjector"
+version = "0.1.0"
+edition = "2021"
+authors = ["vSylva"]
+description = "A command-line utility for injecting DLLs into a target process and unloading already loaded DLLs"
+
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/vSylva/vjector"
+repository = "https://github.com/vSylva/vjector"
+
+[dependencies]
+vcheat = "0.3.2"
+
+[package.metadata.docs.rs]
+default-target = "x86_64-pc-windows-msvc"
+targets = ["x86_64-pc-windows-msvc", "i686-pc-windows-msvc"]
